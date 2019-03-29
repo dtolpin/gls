@@ -1,5 +1,7 @@
 # goroutine local storage
 
+Forked from https://github.com/modern-go/gls.
+
 [![Sourcegraph](https://sourcegraph.com/github.com/modern-go/gls/-/badge.svg)](https://sourcegraph.com/github.com/modern-go/gls?badge)
 [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/modern-go/gls)
 [![Build Status](https://travis-ci.org/modern-go/gls.svg?branch=master)](https://travis-ci.org/modern-go/gls)
@@ -12,7 +14,7 @@ Thanks https://github.com/huandu/go-tls for original idea
 * get current goroutine id
 * goroutine local storage
 
-require go version >= 1.4
+requires go version >= 1.4.
 
 # gls.GoID
 
@@ -31,7 +33,7 @@ go func() {
 
 goroutine local storage is a `map[interface{}]interface{}` local to current goroutine
 
-It is intended to be used by framworks to simplify context passing.
+It is intended to be used by frameworks to simplify context passing.
 
 Use `context.Context` to pass context if possible.
 
